@@ -1,0 +1,6 @@
+"","Patient ID","Date","Measurement Time","Systolic BP","Diastolic BP"
+"1","P1","02/21/26","Morning",120,"76"
+"2","P1","02/27/26","Noon",115,"65"
+"3","P1","02/28/26","Evening",123,"?"
+"4","P2","01/16/26","Morning",118,"72"
+"5","P2","02/04/26","Evening",121,"85"
