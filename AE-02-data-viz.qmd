@@ -73,7 +73,7 @@ With a partner, take two minutes to inspect the variable names and documentation
 2.  Which variables catch your attention?
 3.  Write down **at least two questions** that these data might help us explore. Do not worry yet about how to code them.
 
-> **Our question board:** Add one question from your pair to the class list.
+> **Our question board:** Add one question from your pair to [this padlet](https://padlet.com/kfitzg24/week-02-questions-about-midwest-data-s0236dznhn2x8echq67t).
 
 ## Cycle 1: Start simple, then notice
 
