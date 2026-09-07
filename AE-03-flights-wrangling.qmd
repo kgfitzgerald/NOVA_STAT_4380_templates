@@ -1,0 +1,125 @@
+---
+title: "AE-03: NYC flights — data wrangling"
+author: "YOUR NAME HERE"
+date: today
+format:
+  html:
+    self-contained: true
+    toc: true
+    number-sections: false
+    highlight-style: tango
+    theme: cosmo
+editor: visual
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+#| label: load-packages
+#| message: false
+library(tidyverse)
+library(nycflights13)
+```
+
+The `flights` data frame contains information about all flights departing from New York City (JFK, LGA, and EWR) in 2013. Each row represents one flight.
+
+Before beginning, examine the data and its documentation:
+
+```{r}
+glimpse(flights)
+?flights
+```
+
+# From MathLink cubes to flights
+
+For each exercise:
+
+1.  Before running your code, predict what the resulting rows and columns will represent.
+2.  Write and run the pipeline.
+3.  Check the output to determine whether the code did what you intended.
+
+## Exercise 1: Filter using multiple conditions
+
+Find flights that traveled to LAX **and** arrived on time or early.
+
+Your result should have 10,059 rows and 19 columns.
+
+```{r}
+
+```
+
+How did you check that every remaining flight satisfied both conditions?
+
+> YOUR RESPONSE HERE
+
+## Exercise 2: Combine verbs
+
+Create a pipeline that:
+
+- keeps flights traveling to LAX, BUR, or LGB;
+- keeps only flights that departed early or arrived early;
+- selects `year`, `month`, `day`, `origin`, `dest`, `dep_delay`, and `arr_delay`; and
+- arranges the result from the largest to the smallest arrival delay.
+
+Your result should have 12,492 rows and 7 columns.
+
+```{r}
+
+```
+
+How did you check that your code worked as intended?
+
+> YOUR RESPONSE HERE
+
+## Exercise 3: Create new variables
+
+Starting with `flights`, create:
+
+- `hours`, which converts `air_time` from minutes to hours; and
+- `mph`, which gives the flight's average speed using `distance` and `hours`.
+
+Save the result as a new data frame named `flights_speed`. Then select `air_time`, `distance`, `hours`, and `mph` so you can inspect the calculation.
+
+The first non-missing value of `mph` should be approximately 370.
+
+```{r}
+
+```
+
+Why is it useful to inspect the original variables alongside the variables you created?
+
+> YOUR RESPONSE HERE
+
+## Exercise 4: Group and summarize
+
+Create a variable named `on_time` that is `TRUE` when a flight departed on time or early and `FALSE` otherwise. Then calculate the proportion of on-time flights in each month.
+
+Your result should have 12 rows. The proportion for January should be approximately 0.565.
+
+```{r}
+
+```
+
+Explain how your code is working.
+
+> YOUR RESPONSE HERE
+
+# Your question
+
+Write one question about these flights that can be answered by combining at least three `dplyr` verbs. Your pipeline must use at least one of `filter()`, `mutate()`, or `group_by()`.
+
+**Question:**
+
+> YOUR QUESTION HERE
+
+Before running your code, describe what you expect the resulting data frame to represent. You do not need to predict its exact values or dimensions.
+
+> YOUR PREDICTION HERE
+
+```{r}
+
+```
+
+Describe one specific check you used to verify your result.
+
+> YOUR RESPONSE HERE
