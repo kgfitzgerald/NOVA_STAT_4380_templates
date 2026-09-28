@@ -94,7 +94,7 @@ Why is it useful to inspect the original variables alongside the variables you c
 
 Create a variable named `on_time` that is `TRUE` when a flight departed on time or early and `FALSE` otherwise. Then calculate the proportion of on-time flights in each month.
 
-Your result should have 12 rows. The proportion for January should be approximately 0.565.
+Your result should have 12 rows. The proportion for January should be approximately 0.635.
 
 ```{r}
 
